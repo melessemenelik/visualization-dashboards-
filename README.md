@@ -27,17 +27,17 @@ Built with Tableau, Power BI, and Python libraries (Plotly, Seaborn, Matplotlib)
 
 ### 📂 Repository Structure
 visualization-dashboards/
-│── tableau/                 # Tableau workbooks (.twb/.twbx)
-│── powerbi/                 # Power BI reports (.pbix)
-│── python-dashboards/       # Jupyter notebooks & Python scripts
-│   ├── plotly_dashboard.ipynb      # Interactive Plotly demo
-│   ├── seaborn_visuals.ipynb       # Statistical plots
-│   ├── matplotlib_charts.ipynb     # Classic charts
-│── data/                    # Sample datasets for reproducible demos
-│── requirements.txt
-│── README.md
-│── LICENSE
-│── .gitignore
+│── tableau/                 # Tableau workbooks (.twb/.twbx)  
+│── powerbi/                 # Power BI reports (.pbix)  
+│── python-dashboards/       # Jupyter notebooks & Python scripts  
+│   ├── plotly_dashboard.ipynb      # Interactive Plotly demo  
+│   ├── seaborn_visuals.ipynb       # Statistical plots  
+│   ├── matplotlib_charts.ipynb     # Classic charts  
+│── data/                    # Sample datasets for reproducible demos  
+│── requirements.txt  
+│── README.md  
+│── LICENSE  
+│── .gitignore  
 
 ---
 
@@ -48,4 +48,4 @@ Clone the repo and install Python dependencies:
 git clone https://github.com/melessemenelik/visualization-dashboards.git
 cd visualization-dashboards
 pip install -r requirements.txt
-jupyter notebook python/plotly_dashboard.ipynb
+jupyter notebook python-dashboards/plotly_dashboard.ipynb
