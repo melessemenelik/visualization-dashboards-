@@ -25,7 +25,19 @@ Built with Tableau, Power BI, and Python libraries (Plotly, Seaborn, Matplotlib)
 
 ---
 
-## 📂 Repository Structure
+### 📂 Repository Structure
+visualization-dashboards/
+│── tableau/                 # Tableau workbooks (.twb/.twbx)
+│── powerbi/                 # Power BI reports (.pbix)
+│── python-dashboards/       # Jupyter notebooks & Python scripts
+│   ├── plotly_dashboard.ipynb      # Interactive Plotly demo
+│   ├── seaborn_visuals.ipynb       # Statistical plots
+│   ├── matplotlib_charts.ipynb     # Classic charts
+│── data/                    # Sample datasets for reproducible demos
+│── requirements.txt
+│── README.md
+│── LICENSE
+│── .gitignore
 
 ---
 
