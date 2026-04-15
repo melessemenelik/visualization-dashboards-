@@ -68,19 +68,70 @@ Healthcare KPI dashboard with filters for department and time period, enabling d
 Business unit reporting with interactive slicers for region and quarter, providing executive‑level insights.
 
 ---
-## 🏗️ Architecture Diagram
+
+📍 This shows the **end‑to‑end flow**: raw data → ETL/preprocessing → warehouse → visualization tools → end users.
+
+---
+
+### 🏗️ Architecture Diagram (Box Style)
+
+```markdown
+## 🏗️ Architecture Diagram  
+
+This project demonstrates multi‑cloud visualization pipelines:
+
+                 ┌───────────────────────────────┐
+                 │        Data Sources           │
+                 │   Healthcare KPIs, Business   │
+                 │   Unit Metrics, Sample Data   │
+                 └───────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 │   ETL / Preprocessing Layer   │
+                 │   AWS Glue, Azure DataFactory │
+                 │   Python Cleaning Scripts     │
+                 └───────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 │   Data Warehouse / Analytics  │
+                 │   AWS Redshift, SQL, Parquet  │
+                 │   Azure ML Pipelines          │
+                 └───────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 │   Visualization Layer         │
+                 │   Tableau, Power BI, Plotly   │
+                 │   Seaborn, Matplotlib         │
+                 └───────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 │   End Users                   │
+                 │   Interactive Dashboards,     │
+                 │   Reports, KPIs               │
+                 └───────────────────────────────┘
+
+Key components:
+- **[Data sources](ca://s?q=Explain_data_sources_in_visualization_dashboards)**: healthcare KPIs, business metrics, sample datasets  
+- **[ETL/preprocessing](ca://s?q=Explain_ETL_preprocessing_in_visualization_dashboards)**: Glue, DataFactory, Python scripts  
+- **[Data warehouse](ca://s?q=Explain_data_warehouse_in_visualization_dashboards)**: Redshift, SQL, ML pipelines  
+- **[Visualization](ca://s?q=Explain_visualization_tools_in_visualization_dashboards)**: Tableau, Power BI, Plotly, Seaborn, Matplotlib  
+- **[End users](ca://s?q=Explain_end_users_in_visualization_dashboards)**: executives, analysts, healthcare teams
+
+## 🔄 Visualization Workflow  
 
 ```mermaid
 flowchart LR
-    A[📊 Data Sources] --> B[⚙️ ETL / Preprocessing]
-    B --> C[📈 Visualization Layer]
-    C --> D[👥 End Users]
+    A[Data Sources] --> B[ETL / Preprocessing]
+    B --> C[Data Warehouse / Analytics]
+    C --> D[Visualization Layer]
+    D --> E[End Users]
 
     subgraph Visualization Layer
         T[Tableau]
         P[Power BI]
         Py[Python Dashboards: Plotly, Seaborn, Matplotlib]
     end
+
 
 ## 🔮 Future Work
 
