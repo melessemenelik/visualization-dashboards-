@@ -132,8 +132,11 @@ flowchart LR
     subgraph Visualization Layer
         T[Tableau]
         P[Power BI]
-        Py[Python Dashboards: Plotly, Seaborn, Matplotlib]
+        Pl[Plotly]
+        S[Seaborn]
+        M[Matplotlib]
     end
+
 ```
 
 ## 🔮 Future Work
