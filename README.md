@@ -117,6 +117,8 @@ Key components:
 - **[Data warehouse](ca://s?q=Explain_data_warehouse_in_visualization_dashboards)**: Redshift, SQL, ML pipelines  
 - **[Visualization](ca://s?q=Explain_visualization_tools_in_visualization_dashboards)**: Tableau, Power BI, Plotly, Seaborn, Matplotlib  
 - **[End users](ca://s?q=Explain_end_users_in_visualization_dashboards)**: executives, analysts, healthcare teams
+```
+
 
 ## 🔄 Visualization Workflow  
 
@@ -132,7 +134,7 @@ flowchart LR
         P[Power BI]
         Py[Python Dashboards: Plotly, Seaborn, Matplotlib]
     end
-
+```
 
 ## 🔮 Future Work
 
